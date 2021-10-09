@@ -11,6 +11,13 @@
     .about-company{
         margin-bottom: 1.2rem;
     }
+    /*client section*/
+    .client-box{
+        padding:2rem;
+    }
+    .client-text p{
+        margin: 2.5rem 0;
+    }
 }
 /*ipad media*/
 @media (max-width:992px){
@@ -43,6 +50,13 @@
     #navbarNav ul{
         text-align: center;
     }
+    /*client section*/
+    .client-box{
+        padding:1rem 0;
+        margin-top: 5.2rem;
+
+    }
+
 }
 /*mobile media*/
 @media (max-width:767px){
@@ -62,12 +76,24 @@
         font-size: 2.5rem;
         width: 100%;
     }
-        /*about section*/
-        .about-company{
-            min-height: 400px;
-        }
-        .about-box{
-            padding-bottom:0 ;
-        }
+    /*about section*/
+    .about-company{
+        min-height: 400px;
+    }
+    .about-box{
+        padding-bottom:0 ;
+    }
+    /*client section*/
+    .client-box .section-headline h2{
+        font-size:2rem;
+    }
+    .client-text p{
+        font-size: 1rem ;
+    }
+    /*footer section*/
+    .footer-widget{
+        margin-top: 2rem    ;
+    }
+
 
 }

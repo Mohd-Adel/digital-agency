@@ -505,3 +505,131 @@ ul,ol{
     font-size: 0.9rem;
     line-height: 1.8;
 }
+/*=============================================================Client-section==================================================*/
+.client{
+    padding: 7rem 0 2rem;
+}
+.client-box{
+    padding:3rem;
+}
+.client-text p{
+    color:var(--four-color);
+    font-size: 1.3rem;
+    margin:5.5rem 0;
+}
+.client-text .designer{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/*=============================================================Footer-section==================================================*/
+.footer{
+    margin-top: 4rem;
+    background-color: var(--primary-color);
+}
+.footer-box{
+    padding:5rem 0;
+}
+.footer .footer-menu ul li a,
+.footer p,
+.footer ul li{
+    color:var(--text-color);
+    list-style: none;
+}
+.footer-menu ul li a{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.footer-menu ul li a:hover{
+    color:var(--secondary-color);
+}
+.footer-widget-title{
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.widget-about .contact-details{
+    margin-top: 1.8rem;
+}
+.widget-about .contact-details li{
+    margin-bottom: 0.8rem;
+}
+.widget-about .contact-details li:last-child{
+    margin-bottom: 0;
+}
+.widget-about .contact-details li i{
+    padding-right: 0.8rem;
+    color: var(--text-color);
+}
+.widget-about .contact-details li a{
+    color: var(--text-color);
+}
+.widget-about .social-icons li{
+    list-style: none;
+    display: inline-block;
+    margin: 2rem 0.3rem;
+}
+.widget-about .social-icons li a i{
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: var(--text-color);
+    border:1px solid var(--secondary-color);
+    border-radius: 2rem;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.widget-about .social-icons li a i:hover{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transform: translateY(-0.5rem);
+}
+.mini-footer{
+    text-align: center;
+    padding: 32px 0px;
+    border-top: 0.0650rem solid var(--secondary-color);
+}
+.mini-footer p{
+    margin:0;
+    line-height: 1.6rem;
+    font-size: 0.850rem;
+    color: var(--text-color);
+}
+.mini-footer p a{
+    color:var(--secondary-color);
+    font-weight: 500;
+}
+/*=============================================================Scroll Top==================================================*/
+.back-to-top{
+    position: fixed;
+    bottom: 4.5rem;
+    right: 2rem;
+    z-index: 100;
+    display: non;  
+}
+.back-to-top a{
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    -webkit-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -ms-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+
