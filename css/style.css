@@ -164,7 +164,7 @@ ul,ol{
 .close span,
 .close span::before,
 .close span::after{
-    border: radius 0.2rem;
+    border-radius: 0.2rem;
     height: 0.2rem;
     width: 2rem;
     background: var(--text-color);
@@ -183,9 +183,325 @@ ul,ol{
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
-
-
-
-
-
+/*==================================================================banner-section==================================================*/
+.banner-section{
+    min-height: 600px;
+    background-color: var(--primary-color);
+}
+.banner-content{
+    padding: 7rem 0;
+}
+.banner-content h2{
+    color: var(--text-color);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    width: 80%;
+}
+.main-btn{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+.main-btn span{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border: 2px solid var(--secondary-color);
+    width: 100%;
+    padding: 1rem 2rem;
+    display: block;
+    border-radius: 0.1rem;
+    transition: all ease 0.5s;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.effect{
+    width: 100%;
+    height: 100%;
+    left:-100%;
+    border-radius: 0.1rem;
+    background-color: var(--secondary-color);
+    position: absolute;
+    transition: all ease 0.5s;
+    z-index: 1;
+}
+.main-btn:hover .effect{
+    left:0;
+}
+.main-btn:hover span{
+    color: var(--text-color);
+}
+.bg-hero{
+    background-image:url(../images/first-landing-page-images/hero_02.jpg) ;
+    background-position: center right;
+    min-height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.underline{
+    max-width: 6%;
+    border-bottom: 0.1rem solid var(--secondary-color);
+    margin-bottom: 2.5rem;
+}
+/*==========info box=============*/
+.infobox{
+    padding: 1.5rem 1.2rem;
+    border-radius: 0.1rem;
+    background-color: var(--primary-color);
+    -webkit-transition: background 0.7s;
+    -moz-transition: background 0.7s;
+    -ms-transition: background 0.7s;
+    -o-transition: background 0.7s;
+    transition: background 0.7s;
+}
+.infobox:hover,
+.infobox.active{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+.infobox:hover .infobox-icon,
+.infobox.active .infobox-icon{
+    color: var(--text-color);
+}
+.infobox .infobox-icon{
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+.infobox .infobox-content h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin: 0 0 1.3rem;
+    color:var(--text-color);
+}
+.infobox .infobox-content p{
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+/*===============================================================Services-section==================================================*/
+.services{
+    padding: 7rem 0 2rem;
+}
+.section-headline h2{
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+.section-headline h2::before{
+    content: "";
+    border-bottom: 0.15rem solid var(--secondary-color);
+    margin-bottom: 1.3rem;
+    width: 20%;
+    position: absolute;
+    top: -40%;
+}
+.section-headline p{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.services-name{
+    position: relative;
+    background-color: var(--third-color);
+    padding: 1.6rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1.6rem;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.services-name h3{
+    color: var(--primary-color);
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 24px;
+    margin:0;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.services-name i{
+    color: var(--four-color);
+}
+.services-name:hover{
+    background-color: var(--secondary-color);
+}
+.services-name:hover h3,
+.services-name:hover i{
+    color: var(--text-color);
+    padding-left: 1.5rem;
+}
+/*===============================================================Works-section==================================================*/
+.works{
+    padding:7rem 0 2rem;
+}
+.works .main-btn{
+    margin: 0;
+}
+.works .main-btn span{
+    color: var(--primary-color);
+    padding:0.6rem 2rem;
+}
+.works .project-card{
+    position: relative;
+    margin: 0 0.4rem;
+}
+.works .owl-nav{
+    display: none;
+}
+.works .owl-dots{
+    padding: 1rem 0;
+}
+.works .owl-theme .owl-dots .owl-dot span{
+    background: transparent;
+    border:1px solid var(--four-color);
+}
+.works .owl-theme .owl-dots .owl-dot.active span,
+.works .owl-theme .owl-dots .owl-dot:hover span{
+    background-color:var(--secondary-color) ;
+    border-color:var(--secondary-color) ;
+}
+.project-category{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.project-category h2,
+.project-category p{
+    color: var(--text-color);
+    position: relative;
+    opacity: 0;
+    left:-50%;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.works .project-card:hover .project-category{
+    opacity: 1;
+}
+.works .project-card:hover .project-category p,
+.works .project-card:hover .project-category h2{
+    left: 0;
+    opacity: 1;
+}
+.project-category h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.project-category p{
+    font-size: 0.9rem;
+}
+/*=============================================================About-section==================================================*/
+.about{
+    padding:7rem 0 2rem;
+}
+.about-text{
+    font-size: 15px;
+    color:var(--four-color);
+}
+.about-company{
+    background-image: url(../images/first-landing-page-images/about_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+.about-company-second{
+    background-image: url(../images/first-landing-page-images/about_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 240px;
+    position: relative;
+}
+.about-company-third{
+    background-image: url(../images/first-landing-page-images/about_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 240px;
+    position: relative;
+}
+.about-company::before,
+.about-company-second::before,
+.about-company-third::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+.about-company-second{
+    margin-bottom: 1.2rem;
+}
+.about-company-text{
+    position: absolute;
+    bottom: 1rem;
+    left: 1.2rem;
+    color: var(--text-color);
+}
+.about-company-text h3{
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.about-company-text p{
+    font-size: 0.8rem;
+}
+.about-box{
+    padding: 1rem;
+}
+.about-box h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.about-box p{
+    color: var(--four-color);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}

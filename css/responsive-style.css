@@ -1,0 +1,73 @@
+/*ipad pro media*/
+@media (max-width:1030px){
+    /*header section*/
+    header .navbar-nav a.nav-link{
+    padding:0.8rem 1rem;
+    }
+    .infobox{
+        margin-bottom: 1.3rem;
+    }
+    /*about section*/
+    .about-company{
+        margin-bottom: 1.2rem;
+    }
+}
+/*ipad media*/
+@media (max-width:992px){
+    /*mobile menu icon*/
+    .menu-toggle{
+        position: relative;
+    }
+    .menu-toggle span{
+        width:2rem;
+        height: 0.2rem;
+        display: block;
+        background-color: var(--text-color);
+        margin:0.35rem;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .menu-toggle.active span:nth-child(1){
+        transform: rotate(45deg);
+        position: relative;
+        top: 0.2rem;
+    }
+    .menu-toggle.active span:nth-child(2){
+        display: none;
+    }
+    .menu-toggle.active span:nth-child(3){
+        transform: rotate(-45deg);
+        position: relative;
+        top: -0.3rem;
+    }
+    #navbarNav ul{
+        text-align: center;
+    }
+}
+/*mobile media*/
+@media (max-width:767px){
+    /*header section*/
+    .header .navbar{
+        padding: 0.5rem 0;
+    }
+    .bg-hero{
+        background-size: 125%;
+        background-repeat: no-repeat;
+        background-position: 25% 15%;
+    }
+    .underline{
+        max-width:20%;
+    }
+    .banner-content h2{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+        /*about section*/
+        .about-company{
+            min-height: 400px;
+        }
+        .about-box{
+            padding-bottom:0 ;
+        }
+
+}
